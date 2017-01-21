@@ -1,0 +1,17 @@
+.t-l {
+  text-align: center;
+
+  @media (min-width: $small) {
+    text-align: left;
+  }
+}
+.t-r {
+  text-align: center;
+
+  @media (min-width: $small) {
+    text-align: right;
+  }
+}
+.t-c {
+  text-align: center;
+}

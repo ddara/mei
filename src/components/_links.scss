@@ -1,0 +1,33 @@
+a {
+  color: $grey-darker;
+  text-decoration: none;
+
+  &:hover {
+    color: $black;
+  }
+
+  &.logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -.05rem;
+
+    @media (min-width: $small) {
+      padding-left: 6rem;
+    }
+  }
+
+  &.link {
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 0 .5rem;
+  }
+
+  &.alt {
+    color: $red;
+    font-weight: 700;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

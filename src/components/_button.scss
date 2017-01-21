@@ -1,0 +1,19 @@
+.button {
+  display: block;
+  font-family: "Karla";
+  font-weight: 700;
+  letter-spacing: .05rem;
+  line-height: 1;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  width: 16rem;
+  min-height: 2.5rem;
+  border: 2px solid $black;
+  text-transform: uppercase;
+  transition: all .15s ease-in-out;
+
+  &:hover {
+    background: $black;
+    color: $white;
+  }
+}

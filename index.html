@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cafe Mei</title>
+
+  <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBl3QeJgqHpE5RyqGKQ3l4bh4dDziBLLWs&sensor=false&extension=.js'></script>
+  <script>
+      google.maps.event.addDomListener(window, 'load', init);
+      var map;
+      function init() {
+          var mapOptions = {
+              center: new google.maps.LatLng(45.524673,-73.595979),
+              zoom: 16,
+              zoomControl: true,
+              zoomControlOptions: {
+                  style: google.maps.ZoomControlStyle.SMALL,
+              },
+              disableDoubleClickZoom: true,
+              mapTypeControl: false,
+              scaleControl: false,
+              scrollwheel: false,
+              panControl: false,
+              streetViewControl: false,
+              draggable : true,
+              overviewMapControl: false,
+              overviewMapControlOptions: {
+                  opened: false,
+              },
+              mapTypeId: google.maps.MapTypeId.ROADMAP,
+              styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}],
+          }
+          var mapElement = document.getElementById('map');
+          var map = new google.maps.Map(mapElement, mapOptions);
+          var locations = [
+            ['Cafe Mei', 'undefined', 'undefined', 'undefined', 'undefined', 45.5246803, -73.59600539999997, 'https://mapbuildr.com/assets/img/markers/solid-pin-black.png']
+          ];
+          for (i = 0; i < locations.length; i++) {
+  			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+  			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+  			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+             if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+             if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+              marker = new google.maps.Marker({
+                  icon: markericon,
+                  position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                  map: map,
+                  title: locations[i][0],
+                  desc: description,
+                  tel: telephone,
+                  email: email,
+                  web: web
+              });
+              link = '';     }
+            }
+  </script>
+  <style>
+      #map {
+          height:400px;
+          width: 100%;
+      }
+      .gm-style-iw * {
+          display: block;
+          width: 100%;
+      }
+      .gm-style-iw h4, .gm-style-iw p {
+          margin: 0;
+          padding: 0;
+      }
+      .gm-style-iw a {
+          color: #4272db;
+      }
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:400,500">
+  <link rel="stylesheet" href="dist/styles.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header t-l">
+      <a href="" class="logo">Cafe Mei</a>
+    </header>
+
+    <main>
+      <div class="row is-multiline">
+
+        <div class="col is-5">
+          <div class="post">
+            <div class="content t-l">
+              <h4>À Propos</h4>
+              <p>Ouvert en 1987 à Montreal, le Cafe Mei est un restaurant chinois situé au coeur du Mile End.</p>
+              <p>Sa cuisine provient des quatres coins de la Chine, avec quelques inspirations vietnamiennes et thailandaises.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col is-7">
+          <div class="image image-inside">
+            <div class="credits">
+              <p style="color:white;">&copy; Thomas Séguin</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col is-3">
+          <div class="image image-owners">
+            <div class="credits">
+              <p style="color:white;">&copy; <a style="color:white;" href="http://alisonslattery.com/" target="_blank">Allison Slattery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col is-4">
+          <div class="image image-dimsum">
+            <div class="credits">
+              <p style="color:white;">&copy; <a style="color:white;" href="http://alisonslattery.com/" target="_blank">Allison Slattery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col is-5">
+          <div class="post">
+            <div class="content t-r">
+              <h4>Nos Heures</h4>
+              <div class="row is-mobile">
+                <div class="col is-4 is-offset-1">
+                  <div style="width:100%;"><strong>
+                    <p>LUN &mdash; JEU</p>
+                    <p>VEN</p>
+                    <p>SAM &mdash; DIM</p></strong>
+                  </div>
+                </div>
+                <div class="col is-7 t-r">
+                  <div style="width: 100%;">
+                    <p>12H &mdash; 15H / 17H &mdash; 22H</p>
+                    <p>12H &mdash; 15H / 17H &mdash; 23H</p>
+                    <p>11H &mdash; 15H / 17H &mdash; 22H</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col is-4">
+          <div class="image image-meal">
+            <div class="credits">
+              <p style="color:white;">&copy; <a style="color:white;" href="http://alisonslattery.com/" target="_blank">Allison Slattery</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col is-4">
+          <div class="post colored">
+            <div class="content t-c">
+              <h4>Notre Menu</h4>
+
+              <a href="dist/menus/lunch.pdf" target="_blank" class="button">Midi</a>
+              <a href="dist/menus/night.pdf" target="_blank" class="button">Soir</a>
+              <a href="dist/menus/brunch.pdf" target="_blank" class="button">Brunch</a>
+            </div>
+          </div>
+        </div>
+        <div class="col is-4">
+          <div class="image image-dumpling">
+            <div class="credits">
+              <p style="color:white;">&copy; <a style="color:white;">Amir Pourafzal</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col is-5">
+          <div class="post">
+            <div class="content t-l">
+              <h4>Nous Joindre</h4>
+              <p>5309 Boul St Laurent
+              <br>Montreal, QC H2T 1S5</p>
+              <p>514 271 5945
+              <br><a href="mailto:info@cafemei.com" class="alt">info@cafemei.com</a></p>
+              <p><a href="https://www.facebook.com/CafeMei/" class="alt">Facebook</a>
+              <br><a href="https://www.instagram.com/meilecafechinois/" class="alt">Instagram</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col is-7">
+          <div id="map"></div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="t-c">
+      <p class="copy">&copy; Cafe Mei 2017</p>
+    </footer>
+  </div>
+
+</body>
+</html>

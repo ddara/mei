@@ -1,0 +1,148 @@
+.image {
+  display: block;
+  position: relative;
+  vertical-align: center;
+  width: 100%;
+  min-height: 24rem;
+
+  @media (min-width: $small) {
+    min-height: 40rem;
+  }
+
+  @media (min-width: $medium) {
+    min-height: 32rem;
+  }
+
+  .credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .35);
+    text-align: right;
+    padding: 1rem;
+    line-height: 1;
+    margin: 1rem;
+    border-radius: .4rem;
+    opacity: 0;
+    transition: opacity .15s ease-in-out;
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &:hover {
+    .credits {
+      opacity: 1;
+    }
+  }
+}
+
+.image-restaurant {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/restaurant.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-dimsum {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/dimsum.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-hong {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/hong.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-meal {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/meal.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-padthai {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/padthai.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-siulunbao {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/siulunbao.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-owners {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/buckandmom.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-inside {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/inside.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-dumpling {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/dumpling.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-wall {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/wall.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-wall2 {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/wall2.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.image-napkins {
+  background: linear-gradient(
+                rgba(237, 154, 154, .35),
+                rgba(237, 154, 154, .35)),
+              url('../dist/images/napkins.png');
+  background-position: center;
+  background-size: cover;
+}
